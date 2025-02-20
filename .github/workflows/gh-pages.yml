@@ -10,13 +10,13 @@ jobs:
         with:
           node-version: 20
       - name: Install npm deps
-        working-directory: ./reactСhat
+        working-directory: ./fake-store-api-app
         run: npm i
       - name: Build app
-        working-directory: ./reactСhat
+        working-directory: ./fake-store-api-app
         run: npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./reactСhat/dist
+          publish_dir: ./fake-store-api-app/dist
