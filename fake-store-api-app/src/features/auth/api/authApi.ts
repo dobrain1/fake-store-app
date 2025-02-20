@@ -1,6 +1,6 @@
-import { baseApi } from '../../../shared';
+import { storeApi } from '@/shared';
 
-export const authApi = baseApi.injectEndpoints({
+export const authApi = storeApi.injectEndpoints({
   endpoints: (build) => ({
     login: build.mutation<{ token: string }, { username: string; password: string }>({
       query: (data) => ({
