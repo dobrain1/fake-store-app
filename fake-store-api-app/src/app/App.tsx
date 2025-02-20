@@ -7,7 +7,7 @@ export const App = () => {
   return (
     <>
       <Provider store={store}>
-        <Button variant={'outlined'}>Нажми на меня</Button>
+        <Button variant={'outlined'}>Нажми на меня!</Button>
       </Provider>
     </>
   );
